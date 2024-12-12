@@ -1,0 +1,216 @@
+body,
+main {
+    overflow-x: hidden
+}
+
+.slider.dragging,
+.slider.no-transition {
+    scroll-behavior: auto
+}
+
+.section,
+.slider {
+    scroll-behavior: smooth;
+    scrollbar-width: none
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+body {
+    --min-height: calc(100svh - 115px);
+    margin: 0;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+::selection {
+    color: #ABFF6C;
+    background-color: #D6BDED
+}
+
+.out-of-header a img {
+    pointer-events: none;
+}
+
+.out-of-header,
+main {
+    color: #fff;
+    background-color: #0F002E
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
+
+.site-main-container {
+    width: 100%;
+    max-width: 720px;
+    height: var(--min-height);
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner-header {
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-inline: 16px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.inner-header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(#0F002E, rgba(15, 0, 46, 0.5));
+    box-shadow: 0 5px 15px rgba(15, 0, 46, 0.5);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleY(0);
+    transition: transform .3s ease-in-out;
+    transform-origin: bottom
+}
+
+.inner-header.bkg-col::before {
+    transform: scaleY(1)
+}
+
+.marker {
+    position: absolute;
+    top: 70px;
+}
+
+.buttons-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5em
+}
+
+.slider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%
+}
+
+.slider::-webkit-scrollbar {
+    appearance: none
+}
+
+.slider.dragging {
+    scroll-snap-type: none
+}
+
+.slider.dragging .section {
+    cursor: grab;
+    user-select: none
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding-inline: 2px;
+    overflow-y: scroll;
+    flex-shrink: 0;
+    scroll-snap-align: start
+}
+
+.section::-webkit-scrollbar {
+    appearance: none
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.burger-menu.open+.main-page,
+.burger>* {
+    pointer-events: none
+}
+
+.burger-menu,
+.main-page {
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform .4s ease-in-out
+}
+
+.main-page {
+    inset: 0 0 auto 0;
+    padding: 0 16px;
+    min-height: 100%;
+    z-index: 9
+}
+
+.burger-menu {
+    inset: 0 0 auto 0;
+    min-height: 100%;
+    z-index: 10
+}
+
+.burger-menu.open,
+.main-page.open {
+    transform: translateY(0)
+}
+
+.main-page.open ~ .inner-header {
+    pointer-events: none;
+}
+
+:where(.main-page, .burger-menu) a {
+    display: block
+}
+
+.site-main-container:has(section.burger-menu.open) :where(.inner-header, .slider, .main-page),
+.site-main-container:has(section.main-page.open) :where(.inner-header, .slider) {
+    opacity: 0;
+    transition: opacity .5s ease-in-out
+}
+
+@media (min-width:820px) {
+    body {
+        margin: 0
+    }
+
+    .slider {
+        top: 0
+    }
+}
+
+@media (min-width:1024px) {
+    .body {
+        --min-height: calc(100svh - 70px)
+    }
+}

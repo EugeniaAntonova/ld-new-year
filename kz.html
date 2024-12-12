@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="preload" href="https://static.sz.kz/landings/LD-halloween2/css/main.css" as="style">
+        <link rel="preload" href="https://static.sz.kz/landings/LD-halloween2/js/main.js" as="script"> -->
+
+    <!-- <link rel="stylesheet" href="https://static.sz.kz/landings/LD-halloween2/css/styles.css">
+    <link rel="stylesheet" href="https://static.sz.kz/landings/LD-halloween2/css/theming.css">
+    <link rel="stylesheet" href="https://static.sz.kz/landings/LD-halloween2/css/sections-layout.css"> -->
+    <link rel="stylesheet" href="https://static.sz.kz/landings/LD-halloween2/css/main.css">
+    <!-- <script src="https://static.sz.kz/landings/LD-halloween2/js/slider.js" defer></script>
+    <script src="https://static.sz.kz/landings/LD-halloween2/js/accordeon.js" defer></script>
+    <script src="https://static.sz.kz/landings/LD-halloween2/js/nav.js" defer></script>
+    <script src="https://static.sz.kz/landings/LD-halloween2/js/move.js" defer></script> -->
+    <script src="https://static.sz.kz/landings/LD-halloween2/js/main.js" defer></script>
+    <title>LotoDrive Pool praty</title>
+</head>
+
+<body>
+    <div class="site-main-container">
+        <section class="burger-menu">
+            <div class="burger-wrapper">
+                <button class="burger button-ld button--accent button--small">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#a2)">
+                            <rect x="4.482" y=".322" width="29.017" height="4.353" rx="1"
+                                transform="rotate(45 4.482 .322)" fill="url(#b2)" />
+                            <rect x="1" y="20.598" width="29.017" height="4.353" rx="1" transform="rotate(-45 1 20.598)"
+                                fill="url(#c2)" />
+                        </g>
+                    </svg>
+                    <span class="visually-hidden">закрыть меню</span>
+                </button>
+            </div>
+            <menu>
+                <li>
+                    <a href="#" class="burger-link burger-main-page-link button-ld button--accent burger-menu-button">
+                        <span>Басты бет</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section2" class="burger-link button-ld button--accent burger-menu-button"
+                        data-section="section2">
+                        <span>Рейтинг</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section3" class="burger-link button-ld button--accent burger-menu-button"
+                        data-section="section3">
+                        <span>Лотереялар</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section4" class="burger-link button-ld button--accent burger-menu-button"
+                        data-section="section4">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section5" class="burger-link button-ld button--accent burger-menu-button"
+                        data-section="section5">
+                        <span>Жүлде қоры</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section6" class="burger-link button-ld button--accent burger-menu-button"
+                        data-section="section6">
+                        <span>Инфо</span>
+                    </a>
+                </li>
+            </menu>
+        </section>
+        <section class="main-page open">
+            <div class="inner-wrapper">
+                <div class="burger-wrapper">
+                    <button class="burger closed button-ld button--accent button--small js-main-burger">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#a1)">
+                                <rect x="1" width="24" height="4" rx="1" fill="url(#b1)" />
+                            </g>
+                            <g filter="url(#c1)">
+                                <rect x="1" y="7" width="24" height="4" rx="1" fill="url(#d1)" />
+                            </g>
+                            <g filter="url(#e1)">
+                                <rect x="1" y="14" width="24" height="4" rx="1" fill="url(#f1)" />
+                            </g>
+                        </svg>
+                        <span class="visually-hidden">открыть меню</span>
+                    </button>
+                </div>
+                <div class="main__decor">
+                    <picture>
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-desk-1x.avif 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-desk-2x.avif 2x"
+                            type="image/avif" media="(min-width:450px)">
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-desk-1x.jpg 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-desk-2x.jpg 2x"
+                            type="image/jpg" media="(min-width:450px)">
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-1x.avif 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-2x.avif 2x"
+                            type="image/avif">
+                        <img src="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-1x.png 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-2x.png 2x"
+                            alt="LotoDrive Halloween">
+                    </picture>
+                </div>
+                <div class="main-page-bottom">
+                    <div class="info-wrapper">
+                        <p class="info-item prize">
+                            <span class="info-title">Жүлде қоры:</span>
+                            <span class="info-value js-prize-value">3 225 000 ₸</span>
+                        </p>
+                        <p class="info-item deadline">
+                            <span class="info-title">Мәреге дейін:</span>
+                            <span class="info-value js-ld ld" data-timer="true">
+                                <span class=" timer__body_ld">00 д. 00 ч. 00 м.</span>
+                            </span>
+                            <!-- <span class="info-title">Акция завершена:</span>
+                            <a href="https://static.sz.kz/landings/LD-halloween2/assets/doc/LD-halloween2-list.pdf"
+                                class="rules download-link info-value" target="_blank">Победители</a> -->
+                        </p>
+                    </div>
+                    <a href="#section2" data-section="section2" class="main-page-link button-ld button--accent">
+                        <span>
+                            Рейтингті қарау
+                        </span>
+                    </a>
+                    <a href="https://static.sz.kz/landings/LD-halloween2/assets/doc/LD-halloween2-kz.pdf"
+                        class="rules download-link" target="_blank">Өткізу шарттары</a>
+                </div>
+            </div>
+        </section>
+        <header class="inner-header">
+            <div class="buttons-wrapper">
+                <button class="container-controls button-ld button--accent button--small" id="left">
+                    <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#a)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="m17.252.707 8.363 8.364a1.314 1.314 0 0 1 0 1.858l-8.363 8.364a1.314 1.314 0 0 1-1.86-1.859l6.121-6.12H2V8.686h19.513l-6.12-6.12A1.314 1.314 0 0 1 17.25.707Z"
+                                fill="url(#b)" />
+                        </g>
+                    </svg>
+                    <span class="visually-hidden">назад</span></button>
+                <button class="container-controls button-ld button--accent button--small" id="right">
+                    <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#a)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="m17.252.707 8.363 8.364a1.314 1.314 0 0 1 0 1.858l-8.363 8.364a1.314 1.314 0 0 1-1.86-1.859l6.121-6.12H2V8.686h19.513l-6.12-6.12A1.314 1.314 0 0 1 17.25.707Z"
+                                fill="url(#b)" />
+                        </g>
+                    </svg>
+                    <span class="visually-hidden">вперед</span>
+                </button>
+            </div>
+            <h2 class="header-current-title"></h2>
+            <button class="burger closed button-ld button--accent button--small">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#a1)">
+                        <rect x="1" width="24" height="4" rx="1" fill="url(#b1)" />
+                    </g>
+                    <g filter="url(#c1)">
+                        <rect x="1" y="7" width="24" height="4" rx="1" fill="url(#d1)" />
+                    </g>
+                    <g filter="url(#e1)">
+                        <rect x="1" y="14" width="24" height="4" rx="1" fill="url(#f1)" />
+                    </g>
+                </svg>
+                <span class="visually-hidden">открыть меню</span>
+            </button>
+        </header>
+        <div class="slider" id="slider">
+            <section class="section" id="section2" data-section-name="Рейтинг" draggable="false"
+                style="position: relative;">
+                <div class="marker"></div>
+                <div class="inner-section-container">
+                    <section class="winners-rating">
+                        <div class="winners-container">
+                            <div class="rating-list-wrapper">
+                                <div class="rating-list" role="list"></div>
+                                <div class="current-player-wrapper" id="current-player-wrapper">
+                                    <div class="current-player-title">
+                                        <span class="current-player-myplace">Менің орным - </span>
+                                        <span class="current-player-place">00</span>
+                                    </div>
+                                    <div class="current-player-score-wrapper">
+                                        <span class="current-player-label">Ұпай:</span>
+                                        <span class="current-player-score">00</span>
+                                    </div>
+                                    <button type="button" class="current-player-action button-ld button--accent"
+                                        role="button">
+                                        <span>Көрсету</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="section games" id="section3" data-section-name="Лотереялар" draggable="false">
+                <div class="marker"></div>
+                <div class="inner-section-container">
+                    <div class="games-list" role="list">
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1082" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/tb.svg"
+                                    alt="TeleBingo">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1079" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/649.svg"
+                                    alt="Loto 6/49">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1081" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/777.svg"
+                                    alt="Loto 777">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1043" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/sl.svg"
+                                    alt="SuperLoto">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1084" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/536.svg"
+                                    alt="Loto 5/36">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1083" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/keno2.svg"
+                                    alt="Keno2">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1042" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/420.svg" alt="4/20">
+                            </a>
+                        </div>
+                        <div class="games-item" role="listitem">
+                            <a href="https://sz.kz/game?gameid=1041" title="перейти к игре" target="_blank">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/games/820.svg" alt="8/20">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section faq" id="section4" data-section-name="faq" draggable="false">
+                <div class="marker"></div>
+                <div class="inner-section-container">
+                    <h2 class="title">Жиі қойылатын сұрақтар:</h2>
+                    <div class="faq-list" role="list">
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive Halloween&nbsp;2"
+                                дегеніміз не?</button>
+                            <div class="panel">
+                                <p>
+                                    «LotoDrive Halloween» - бұл сандарды таңдаудан қорықпайтын және комбинациялар туралы
+                                    ойлайтындарға арналған науқан. Мәреге тек ең батыл қатысушылар ғана жете алады, ал
+                                    біреу тіпті бірнеше ондаған, тіпті жүздеген миллион қорқынышты Бас жүлдесін жеңіп
+                                    алу бақытына ие болуы мүмкін… У-у-у-у, қорқып кеттіңіз бе?
+                                </p>
+                                <p>
+                                    LOTO 6/49, TeleBingo, 8/20, 4/20, 777, SuperLoto, Loto&nbsp;5/36 және Keno2 тиражды
+                                    лотерея билеттерін сатып алып, сатып алғаныңыз үшін рейтинг ұпайларын алыңыз. Жүлде
+                                    қоры ең көп ұпай жинаған 100 қатысушыға бөлінеді.
+                                </p>
+                            </div>
+                        </div>
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive
+                                Halloween&nbsp;2" науқаны туралы</button>
+                            <div class="panel">
+                                <h3>
+                                    &laquo;LotoDrive Halloween&nbsp;2&raquo; ұйымдастырушысы кім
+                                </h3>
+                                <p>
+                                    Науқан ұйымдастырушысы: «Сәтті Жұлдыз» АҚ. Мекенжайы: Алматы қ., Жетісу ауданы,
+                                    Жібек Жолы даңғ., 50, корпус 2
+                                </p>
+                                <h3>
+                                    Науқанға кім қатыса алады?
+                                </h3>
+                                <p>
+                                    <a href="https://sz.kz" class="inline-link" target="_blank">sz.kz</a> сайтында жеке
+                                    кабинетін тіркеген, кәмелет жасқа толған тұлғалар.
+                                </p>
+                                <h3>Науқанның өту мерзімі қандай?</h3>
+                                <p>
+                                    &laquo;LotoDrive Halloween&nbsp;2&raquo; науқанының өтілетін мерзімі:
+                                    14.10.2024 10:00:01 28.10.2024 20:59:59 дейін.
+                                </p>
+                                <h3>
+                                    Науқанға қалай қатысуға болады?
+                                </h3>
+                                <p>
+                                    <a href="https://sz.kz" class="inline-link" target="_blank">sz.kz</a> сайтында
+                                    тіркеліңіз, науқан қатысушысының профилі бар парақшаға өтіп, «Никнеймді» таңдаңыз
+                                    (Науқан кезеңінде қатысушы қолданатын жалған виртуалды
+                                    және бірегей есім).
+                                </p>
+                                <p>
+                                    <a href="https://static.sz.kz/landings/LD-halloween2/assets/doc/LD-halloween2-kz.pdf"
+                                        class="inline-link" target="_blank">Науқан шарттарымен</a> танысу.
+                                </p>
+                                <p>
+                                    Науқанның өткізілу кезеңінде LOTO&nbsp;6/49, TeleBingo, 8/20, 4/20, 777, SuperLoto,
+                                    Loto&nbsp;5/36 және Keno2 тиражды лотерея билеттерін сатып алып,
+                                    https://sz.kz/lotodrive-halloween2 арнайы парақшасында рейтингті бақылау.
+                                </p>
+                            </div>
+                        </div>
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive
+                                Halloween&nbsp;2" науқан қатысушыларына</button>
+                            <div class="panel">
+                                <h3>Рейтинг ұпайлары дегеніміз не?</h3>
+                                <p>
+                                    Рейтинг ұпайлары - науқан мерзімі өтілуі кезінде LOTO&nbsp;6/49, TeleBingo, 8/20,
+                                    4/20, 777, SuperLoto, Loto&nbsp;5/36 және Keno2 лотереяларын сатып алғаны үшін
+                                    сыйақы.
+                                </p>
+                                <h3>
+                                    Рейтинг дегенимиз не?
+                                </h3>
+                                <p>
+                                    «Рейтинг» — нақты уақыт режимінде 15 минуттық интервалмен өзгеретін науқанға
+                                    қатысушының сандық көрсеткіші.
+                                </p>
+                                <h3>
+                                    Рейтинг қалай саналады?
+                                </h3>
+                                <p>
+                                    Рейтинг ұпайлары Науқанға қатысқан лотереялардағы ұтыстар үшін есептеледі
+                                </p>
+                                <p>
+                                    1 рейтинг ұпайы = 100 теңге.
+                                </p>
+                            </div>
+                        </div>
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive Halloween&nbsp;2"
+                                науқанының жүлде қоры</button>
+                            <div class="panel">
+                                <h3>
+                                    Науқанның жүлде қоры қандай?
+                                </h3>
+                                <p>
+                                    Науқанның жүлде қоры негізгі ЖҚ және жинақтаушы ЖҚ тұрады. егізгі жүлде қоры
+                                    (НЖҚ):
+                                    2 миллион 600 мың теңге, 625 мың Бонус және 100 Гауһар Лотобокс. Жинақтаушы
+                                    жүлде
+                                    қоры (ЖЖҚ): Науқан өткізілу кезеңінде TeleBingo, Loto 6/49, 777,
+                                    SuperLoto, 5/36, Keno2,
+                                    4/20 және 8/20 тиражды лотереяларын сатып алынған
+                                    сомасының 2%-ы.
+                                </p>
+                                <p>
+                                    1&nbsp;орын: 1&nbsp;жүлде &nbsp;&mdash; 1&nbsp;000&nbsp;000 теңге + 10% ЖЖҚ<br>
+                                    2&nbsp;орын: 1&nbsp;жүлде&nbsp;&mdash; 600&nbsp;000 теңге + 7,5% ЖЖҚ<br>
+                                    3&nbsp;орын: 1&nbsp;жүлде&nbsp;&mdash; 350&nbsp;000 теңге + 7,5% ЖЖҚ<br>
+                                    4&nbsp;орын: 1&nbsp;жүлде&nbsp;&mdash; 200&nbsp;000 теңге + 7,5% ЖЖҚ<br>
+                                    5&nbsp;орын: 1&nbsp;жүлде&nbsp;&mdash; 150&nbsp;000 теңге + 7,5%&nbsp;ЖЖҚ<br>
+                                    6-7&nbsp;орын: 75&nbsp;000 теңгеден + 5%&nbsp;ЖЖҚ (тең бөліктерде) болатын
+                                    3&nbsp;жұлде<br>
+                                    8-10&nbsp;орын:50&nbsp;000 теңгеден + 5%&nbsp;ЖЖҚ (тең бөліктерде) болатын
+                                    2&nbsp;жұлде<br>
+                                    11-25&nbsp;орын: 25&nbsp;000 Бонустан + 25%&nbsp;ЖЖҚ (тең бөліктерде) болатын
+                                    15&nbsp;жұлде<br>
+                                    26-50&nbsp;орын: 50&nbsp;000 Бонустан + 25%&nbsp;ЖЖҚ (тең бөліктерде) болатын
+                                    25&nbsp;жұлде<br>
+                                    51-100&nbsp;орын: 2&nbsp;Гауһар лотобокстан болатын 50&nbsp;жүлде
+                                </p>
+                            </div>
+                        </div>
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive
+                                Halloween&nbsp;2" науқан Жеңімпаздары</button>
+                            <div class="panel">
+                                <h3>
+                                    Науқан жеңімпаздары қалай анықталады?
+                                </h3>
+                                <p>
+                                    Жеңімпаздар науқан аяқталғаннан кейін, басқалардан бұрын науқанның барлық шарттарын
+                                    орындаған барлық қатысушылардың арасында рейтингтік ұпайларды есептеу арқылы
+                                    анықталады.
+                                </p>
+                                <h3>
+                                    Жеңімпаздар тізімімен қайда және қашан танысуға болады?
+                                </h3>
+                                <p>
+                                    Науқан нәтижелері 2024&nbsp;жылдың 31&nbsp;қазанға дейін
+                                    https://sz.kz/lotodrive-halloween2
+                                    сайтында орналастырылады, Жеңімпаздың жасырылған телефон нөмірін (мысалы,
+                                    7&nbsp;701&nbsp;9**
+                                    &nbsp;*&nbsp;83) көрсететін жеңімпаздар тізімі, соңғы ұпайлар есептелу күні мен
+                                    уақытын
+                                    көрсететін
+                                    рейтингтік позициялар түрінде жарияланады.
+                                </p>
+                                <p>
+                                    Рейтинг ұпайларын және рейтингтегі қорытынды позицияны есептеу бойынша науқанға
+                                    қатысушылардан шағымдар мен ескертулер науқанға қатысушының байланыс орталығына <a
+                                        href="tel:+78000805200"
+                                        class="inline-link">8&nbsp;800&nbsp;080&nbsp;52&nbsp;00</a> телефоны арқылы
+                                    2024 жылғы 30 қазанға кешіктірмей науқанның ресми қорытындылары жарияланғанға дейін
+                                    қабылданады.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div role="listitem">
+                            <button type="button" class="js-toggle secondary-button">"LotoDrive Halloween&nbsp;2" науқан
+                                жеңімпаздарын марапаттау туралы</button>
+                            <div class="panel">
+                                <h3>
+                                    Ақшалай жүлдені қалай алуға болады?
+                                </h3>
+                                <p>
+                                    Ақшалай жүлденің жеңімпазы жүлдені алу мүмкіндігі туралы хабарлама алған сәттен
+                                    бастап 30 күнтізбелік күннен кешіктірмей Науқанды ұйымдастырушының жақын жердегі
+                                    кеңсесінде өз жүлдесін ресімдеп, ала алады.
+                                </p>
+                                <h3>
+                                    Алынған ақшалай жұлде үшін салық төлеу керек пе?
+                                </h3>
+                                <p>
+                                    ҚР салық заңнамасына сәйкес АЕК-тің 6 еселенген мөлшерінен асатын ұтыстарға төлем
+                                    көзінен жеке табыс салығы салынады. Табыс салығын төлеу ҚР қолданыстағы Салық
+                                    кодексіне сәйкес ұтысты алған кезде Лотереяға Қатысушының ұтысының сомасынан салық
+                                    сомасын
+                                    ұстау түрінде жүзеге асырылады. Жоғарыда аталған салықтың мөлшерлемелері: ҚР
+                                    резиденттері үшін – 10%; ҚР бейрезиденттері үшін – 20% (жиырма).
+                                </p>
+                                <h3>
+                                    Науқан аяқталғаннан кейін жеңімпаздарға Бонсутар және Лотобокстар қашан және қалай
+                                    есептеледі?
+                                </h3>
+                                <p>
+                                    Бонустарды және лотобокстарды жеңімпазға Науқанды ұйымдастырушы нәтижелер
+                                    жеңімпаздың жеке кабинетінде жарияланған күннен бастап 5 жұмыс күні ішінде және
+                                    науқан нәтижелері бойынша бір рет береді.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section prizes" id="section5" data-section-name="
+            Жүлделер" draggable="false">
+                <div class="marker"></div>
+                <div class="inner-section-container">
+                    <div class="prizes-top">
+                        <p class="prizes-top-descr">
+                            Жүлде қоры <u>топ&nbsp;100</u>&nbsp;қатысушы арасында бөлінеді
+                        </p>
+                    </div>
+                    <div class="prizes-table" role="table">
+                        <div class="prizes-table-head" role="row">
+                            <span>Орын</span>
+                            <span>Жеңімпаздар</span>
+                            <span>Жүлде</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>1 орын</span>
+                            <span>1</span>
+                            <span class="js-prizes-prize">2 000 000 ₸</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>2 орын</span>
+                            <span>1</span>
+                            <span class="js-prizes-prize">2 000 000 ₸</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>3 орын</span>
+                            <span>1</span>
+                            <span class="js-prizes-prize">2 000 000 ₸</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>4 орын</span>
+                            <span>1</span>
+                            <span class="js-prizes-prize">2 000 000 ₸</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>5 орын</span>
+                            <span>1</span>
+                            <span class="js-prizes-prize">2 000 000 ₸</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>6&nbsp;-&nbsp;7 орын</span>
+                            <span>2</span>
+                            <span class="js-prizes-prize">12 000</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>8&nbsp;-&nbsp;10 орын</span>
+                            <span>3</span>
+                            <span class="js-prizes-prize">12 000</span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>11&nbsp;-&nbsp;25 орын</span>
+                            <span>15</span>
+                            <span><span class="js-prizes-prize">12 000</span><img
+                                    src="https://static.sz.kz/landings/LD-halloween2/assets/bonus-icon.svg"
+                                    alt="бонусов"></span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>26&nbsp;-&nbsp;50 орын</span>
+                            <span>25</span>
+                            <span><span class="js-prizes-prize">12 000</span><img
+                                    src="https://static.sz.kz/landings/LD-halloween2/assets/bonus-icon.svg"
+                                    alt="бонусов"></span>
+                        </div>
+                        <div class="prizes-table-content" role="row">
+                            <span>51&nbsp;-&nbsp;100 орын</span>
+                            <span>50</span>
+                            <span
+                                style="width: 100%; display: flex; align-items: center; justify-content: end; gap: 1ch;"><span
+                                    style="font-size: 2.5em; line-height: .6;">2</span><span
+                                    style="flex: 0; line-height: 1.1;">Гауһар Лотобокс</span></span>
+                        </div>
+                    </div>
+                    <picture>
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-desk-1x.avif 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-desk-2x.avif 2x"
+                            type="image/avif" media="(min-width: 520px)" width="609" height="268">
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-desk-1x.png 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-desk-2x.png 2x"
+                            type="image/png" media="(min-width: 520px)" width="609" height="268">
+                        <source
+                            srcset="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-1x.avif 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-2x.avif 2x"
+                            type="image/avif">
+                        <img src="https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-1x.png 1x, https://static.sz.kz/landings/LD-halloween2/assets/main-logo-bright-bats-2x.png 2x"
+                            alt="LotoDrive halloween" width="312" height="137" class="js-show invisible">
+                    </picture>
+                </div>
+            </section>
+            <section class="section info-section" id="section6" data-section-name="Инфо" draggable="false">
+                <div class="marker"></div>
+                <div class="inner-section-container">
+                    <div class="info-list" role="list">
+                        <img src="https://static.sz.kz/landings/LD-halloween2/assets/grave-stone.png" alt=""
+                            aria-hidden="true" class="bg-grave">
+                        <div class="section-logo" role="listitem">
+                            <img src="https://static.sz.kz/landings/LD-halloween2/assets/logo-main-small.svg"
+                                alt="LotoDrive Halloween" width="146" height="64">
+                        </div>
+                        <div class="info-list-item buy" role="listitem">
+                            <div class="info-item-decor">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/buy-icon.svg" alt=""
+                                    aria-hidden="true" width="68" height="82">
+                            </div>
+                            <div class="info-item-text">
+                                <h3 class="info-item-title">Сатып алыңыз</h3>
+                                <p class="info-item-descr">Классикалық лотерея билеттерін сатып алыңыз</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item get" role="listitem">
+                            <div class="info-item-decor">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/get-icon.svg" alt=""
+                                    aria-hidden="true" width="68" height="72">
+                            </div>
+                            <div class="info-item-text">
+                                <h3 class="info-item-title">Алыңыз</h3>
+                                <p class="info-item-descr">Сатып алғыныңыз үшін рейтинг балдарын алыңыз</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item win" role="listitem">
+                            <div class="info-item-decor">
+                                <img src="https://static.sz.kz/landings/LD-halloween2/assets/win-icon.svg" alt=""
+                                    aria-hidden="true" width="81" height="45">
+                            </div>
+                            <div class="info-item-text">
+                                <h3 class="info-item-title">Ұтып алыңыз</h3>
+                                <p class="info-item-descr">Науқанның жұлде қоры 100 жеңімпаз арасында бөлінеді
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <template id="player-template">
+        <div class="item" role="listitem">
+            <div class="inner">
+                <span class="place"></span>
+                <div class="winner-avatar">
+                </div>
+                <div class="nick-wrapper">
+                    <span class="label">Никнейм:</span>
+                    <span class="nick"></span>
+                </div>
+                <div class="score-wrapper">
+                    <span class="label">Ұпай:</span>
+                    <span class="score"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+    <svg width="0" height="0" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+        style="position: fixed;">
+        <defs>
+            <lineargradient id="b" x1="14" y1=".322" x2="14" y2="19.678" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <filter id="a" x=".8" y=".322" width="26.4" height="21.756" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feflood flood-opacity="0" result="BackgroundImageFix" />
+                <fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feoffset dy="1.2" />
+                <fegaussianblur stdDeviation=".6" />
+                <fecomposite in2="hardAlpha" operator="out" />
+                <fecolormatrix values="0 0 0 0 0.266667 0 0 0 0 0.109804 0 0 0 0 0.054902 0 0 0 1 0" />
+                <feblend in2="BackgroundImageFix" result="effect1_dropShadow_1850_1573" />
+                <feblend in="SourceGraphic" in2="effect1_dropShadow_1850_1573" result="shape" />
+            </filter>
+            <lineargradient id="b1" x1="13" y1="0" x2="13" y2="4" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <lineargradient id="d1" x1="13" y1="7" x2="13" y2="11" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <lineargradient id="f1" x1="13" y1="14" x2="13" y2="18" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <filter id="a1" x="0" y="0" width="26" height="6" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feflood flood-opacity="0" result="BackgroundImageFix" />
+                <fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feoffset dy="1" />
+                <fegaussianblur stdDeviation=".5" />
+                <fecomposite in2="hardAlpha" operator="out" />
+                <fecolormatrix values="0 0 0 0 0.266667 0 0 0 0 0.109804 0 0 0 0 0.054902 0 0 0 1 0" />
+                <feblend in2="BackgroundImageFix" result="effect1_dropShadow_1850_1212" />
+                <feblend in="SourceGraphic" in2="effect1_dropShadow_1850_1212" result="shape" />
+            </filter>
+            <filter id="c1" x="0" y="7" width="26" height="6" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feflood flood-opacity="0" result="BackgroundImageFix" />
+                <fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feoffset dy="1" />
+                <fegaussianblur stdDeviation=".5" />
+                <fecomposite in2="hardAlpha" operator="out" />
+                <fecolormatrix values="0 0 0 0 0.266667 0 0 0 0 0.109804 0 0 0 0 0.054902 0 0 0 1 0" />
+                <feblend in2="BackgroundImageFix" result="effect1_dropShadow_1850_1212" />
+                <feblend in="SourceGraphic" in2="effect1_dropShadow_1850_1212" result="shape" />
+            </filter>
+            <filter id="e1" x="0" y="14" width="26" height="6" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feflood flood-opacity="0" result="BackgroundImageFix" />
+                <fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feoffset dy="1" />
+                <fegaussianblur stdDeviation=".5" />
+                <fecomposite in2="hardAlpha" operator="out" />
+                <fecolormatrix values="0 0 0 0 0.266667 0 0 0 0 0.109804 0 0 0 0 0.054902 0 0 0 1 0" />
+                <feblend in2="BackgroundImageFix" result="effect1_dropShadow_1850_1212" />
+                <feblend in="SourceGraphic" in2="effect1_dropShadow_1850_1212" result="shape" />
+            </filter>
+            <lineargradient id="b2" x1="18.991" y1=".322" x2="18.991" y2="4.675" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <lineargradient id="c2" x1="15.508" y1="20.598" x2="15.508" y2="24.95" gradientUnits="userSpaceOnUse">
+                <stop offset=".214" stop-color="#DCF096" />
+                <stop offset=".478" stop-color="#C7FF00" />
+                <stop offset="1" stop-color="#790" />
+            </lineargradient>
+            <filter id="a2" x=".414" y=".494" width="25.172" height="25.01" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feflood flood-opacity="0" result="BackgroundImageFix" />
+                <fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feoffset dy="1" />
+                <fegaussianblur stdDeviation=".5" />
+                <fecomposite in2="hardAlpha" operator="out" />
+                <fecolormatrix values="0 0 0 0 0.266667 0 0 0 0 0.109804 0 0 0 0 0.054902 0 0 0 1 0" />
+                <feblend in2="BackgroundImageFix" result="effect1_dropShadow_1850_1162" />
+                <feblend in="SourceGraphic" in2="effect1_dropShadow_1850_1162" result="shape" />
+            </filter>
+        </defs>
+    </svg>
+
+
+</body>
+
+</html>
